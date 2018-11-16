@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Kalam" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Big Kahuna</title>
+</head>
+<body>
+<div class="wrapper">
+<div id="header-wrapper" class="header-wrapper">
+<header>
+    <div class="social-media" id="social-media">
+        <ul>
+            <li> <a href="https://www.facebook.com/kahunatikis/"><img src="images/facebook.png" alt="social-icon"></a></li>
+            <li> <a href="https://twitter.com/palmhuts"> <img src="images/twitter.png" alt="social icon"></a></li>
+            <li> <a href="https://www.youtube.com/watch?v=36zGoc2tDW0"> <img src="images/youtube.png" alt="social-icon"></a></li>
+        </ul>
+    </div>
+    
+    <div class="logo-menu" id="logo-menu">
+        <ul class="nav">
+            <li class="logo" style="padding-bottom:0; margin-bottom: 0;"> <a href="index.html"> <img src="images/logo.png" alt="logo"></a></li>
+            <li class="home"><a href="index.html"> <img src="images/home.png" alt="home"></a></li>
+            <li> <a href="#" > <img src="images/about.png"> </a></li>
+            <li> <a href="#" style="padding-bottom:0;"> <img src="images/testimonial.png"></a></li>
+            <li> <a href="#" style="padding-bottom:0;"> <img src="images/portfolio.png"></a></li>
+        </ul>
+    </div>
+    <!--Mobile Menu-->
+    <div class="mobile">
+        <div class="toggle">
+            <div class="mobile-logo">
+                <a href="index.html"><img src="images/bottomlogo.gif"></a>
+            </div>
+           <div class="hamburger" id="hamburger" onclick="shownav()">
+                <span></span>
+                <div class="top">
+
+                </div>
+                <div class="middle">
+
+                </div>
+                <div class="bottom">
+
+                </div>
+            </div>
+        </div>
+        <div class="menu-box" id="menu-box">
+        <ul class="mobile-menu">
+            <li>
+                <a href="index.html"> <img src="images/home3.png" style="display:block; margin: 0 auto; width: 80px; height: auto;"></a>
+            </li>
+            <li>
+                <a href="#"> About</a>
+            </li>
+            <li>
+                <a href="#"> Testimonial</a>
+            </li>
+            <li>
+                <a href="#"> Portfolio</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</header>
+</div>
+<div id ="wrap" class="wrap">
+    <!--About -->
+    <div class="about" id="about">
+        <img src="images/about-section.png" alt="about"> 
+    </div>
+    <!--end of about-->
+    <!--about mobile-->
+    <div class="about-mobile">
+        <p>
+        We are a team of enthusiastic, and professional hut makers based out of Florida.
+        We build custom tiki huts for private individuals as well as businesses. If you 
+        would like to have one, just holla at us.</p>
+        <div> <img src="images/crumb.png" style="width:100%;"></div>
+    </div>
+    <!--overflow-->
+    <div class="overflow" id ="overflow">
+        <img src="images/overflow.png" alt="overflow">
+    </div>
+    <div class="overflow-mobile">
+        <div class="hide"><img src="images/hanging plate.png"></div>
+        <div class="show">
+            <img src="images/hanging plate.png">
+        </div>
+    </div>
+    <!--end of overflow-->
+
+    <!--Gallery-->
+    <div class="gallery" id="gallery">
+    <div class="gallery-image"> <img src ="images/photo gallery.png"></div>
+    <div class="more"> <img src="images/more.png"> </div>
+    </div>
+    <!--end of Gallery-->
+
+    <!--Mobile Gallery-->
+    <div class="mobile-gallery">
+        <div class="textholder"> 
+            <img src="images/photo gallery text.png">
+        </div>
+        <div class="card">
+            <img src="images/card.png">
+        </div>
+        <div class="card">
+            <img src="images/card1.png">
+        </div>
+        <div class="card">
+            <img src="images/card2.png">
+        </div>
+        <div class="cta">
+            <img src="images/more.png">
+        </div>
+    </div>
+    <!--end of Mobile Gallery-->
+    <!--Media-->
+    <div id ="media" class="media click">
+        <div class="video_container">
+                <iframe width="500" height="420" src="https://www.youtube.com/embed/Hhktw6JNu6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+                 gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="text">
+            <h3> Let's show you around a little </h3>
+            <p> Here's a video of some of the huts we've built. Hope you'd enjoy them</p>
+        </div>
+   
+    </div>
+</div>
+<div class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.9990657434764!2d-80.10600448549555!3d26.164159898211686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d901fc77fd8805%3A0xfc3e0aa5ff0f7d3f!2sBig+Kahuna+Tiki+Huts!5e0!3m2!1sen!2sng!4v1542115591211"
+     width="1200" height="450" frameborder="0" 
+    style="border:0" allowfullscreen></iframe>
+</div>
+<footer>
+
+<div class="contact">
+        <div class="message">
+                <h3> Sign up to Our News letter</h3>
+        </div>
+    <div class="form">
+        <div class="form-group">
+        <p> <label for="name"> Name:</label></p>
+        <p><input type="text" id="name"></p>
+
+        </div>
+        <div class="form-group">
+                <p> <label for="name"> Email:</label></p>
+                <p><input type="email" id="name"></p>
+        
+        </div>
+        <button> <span>Submit </span> </button>
+    </div>
+    
+</div>
+
+</footer>
+<div class="copyright">
+    <p> &copy; 2018 Big Kahuna Tiki Hut</p>
+ </div>
+ </div>
+<script>
+function shownav(){
+    var x= document.getElementById("hamburger");
+    var y=document.getElementById("menu-box");
+    if(x.className==="hamburger"){
+        x.className += " click";
+        y.className +=" click"
+    }else{
+        x.className ="hamburger";
+        y.className="menu-box";
+    }
+}
+</script>
+</body>
+</html>
